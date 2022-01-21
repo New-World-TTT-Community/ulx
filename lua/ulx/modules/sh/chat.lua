@@ -200,7 +200,7 @@ function ulx.mute( calling_ply, target_plys, should_unmute )
 		end
 		v:SetNWBool("ulx_muted", not should_unmute)
 	end
-
+	hook.Call( "ULibPlayerMuted", nil, target_plys, calling_ply )
 	if not should_unmute then
 		ulx.fancyLogAdmin( calling_ply, "#A muted #T", target_plys )
 	else
@@ -233,6 +233,8 @@ function ulx.gag( calling_ply, target_plys, should_ungag )
 		v.ulx_gagged = not should_ungag
 		v:SetNWBool("ulx_gagged", v.ulx_gagged)
 	end
+
+	hook.Call( "ULibPlayerGagged", nil, target_plys, calling_ply )
 
 	if not should_ungag then
 		ulx.fancyLogAdmin( calling_ply, "#A gagged #T", target_plys )

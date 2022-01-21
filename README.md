@@ -8,6 +8,9 @@ Visit our homepage at http://ulyssesmod.net.
 
 You can talk to us on our forums at http://forums.ulyssesmod.net.
 
+## Edit
+This is a modified version of ULX from [Richard](https://github.com/Rich-a-rd) for the Server New World TTT.
+
 ## Requirements
 ULX requires the latest version of [ULib](https://github.com/TeamUlysses/ulib) to be installed on the server.
 
